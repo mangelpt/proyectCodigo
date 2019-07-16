@@ -1,1 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+/**##########header##############**/
+.header {
+  height: 50px;
+  background-color: #333333;
+  display: flex;
+  justify-content: space-around;
+}
+.header a {
+  color: #fff;
+  text-decoration: none;
+  margin: 15px;
+}
+
+.header  ul {
+  list-style: none;
+  color: #fff;
+  display: flex;
+  margin-top: 15px;
+}
+
+/**#################main########################**/
+.banner {
+  height: 500px;
+  background-image: url("https://images.unsplash.com/photo-1444212477490-ca407925329e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80");
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
+
+/** baner**/ 
+.Cbanner {
+  color: #fff;
+  margin-left: 20%;
+}
+.Cbanner .titulo{
+    font-weight: bold;
+    font-size: 1.8em;
+}
+button {
+  padding: 5px;
+  margin: 10px;
+  background: transparent;
+  border: 3px solid #fff;
+}
+button > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.7em;
+}
+
+/** club**/
+.club{
+padding: 20px;
+}
+
+.club>h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.1em;
+    margin-bottom: 15px;
+}
+.club>p{
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/**blog*/
+
+.blog h3{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+.img{
+display: flex;
+justify-content:space-around
+}
