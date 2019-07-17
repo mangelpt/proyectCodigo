@@ -2,22 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
 }
 
 /* var
 */
-:root{
-  --mainColor:#333333;
+:root {
+  --mainColor: #333333;
 }
 
 /**##########header##############**/
 .header {
-  height: 50px;
-  background-color:var(--mainColor);
+  height: 60px;
+  background-color: var(--mainColor);
   display: flex;
   justify-content: space-around;
   position: fixed;
-  width:100%;
+  width: 100%;
 }
 .header a {
   color: #fff;
@@ -26,6 +27,9 @@
   font-size: 22px;
 }
 
+.header a:hover {
+  border-bottom: 3px solid #fff;
+}
 header .logo {
   font-size: 2em;
 }
@@ -39,7 +43,7 @@ header .logo {
 /**#################main########################**/
 .banner {
   height: 500px;
-  background-image: url("https://images.unsplash.com/photo-1444212477490-ca407925329e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80");
+  background-image: url("https://cdn.pixabay.com/photo/2017/06/20/22/14/men-2425121_960_720.jpg");
   background-attachment: fixed;
   background-size: cover;
   display: flex;
@@ -110,29 +114,32 @@ button > a {
   font-size: 19px;
 }
 
-
 /** photos***/
-.photos{
+.photos {
   height: auto;
   background-color: var(--mainColor);
 }
-.photos h3{
+.photos h3 {
   color: #fff;
+  font-size: 1.4em;
 }
-.photo { 
+.photo {
   padding-top: 30px;
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
   color: #fff;
 }
 .photo figure {
   width: 20%;
-
 }
 .photo figure img {
   width: 100%;
   border-radius: 100%;
   border: 5px solid #fff;
 }
+
+
+/*#####################header****************************/
+
