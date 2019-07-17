@@ -141,5 +141,28 @@ button > a {
 }
 
 
-/*#####################header****************************/
+/*#####################footer****************************/
 
+footer{
+  height: auto;
+  background-color:var(--mainColor);
+  display:flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 10px;
+
+}
+footer a{
+  text-decoration: none;
+  color: #fff;
+  margin: 10px;
+}
+.social{
+  display: flex;
+}
+
+.social .fab{
+  color: #fff;
+  margin: 5px;
+  font-size: 1.4em;
+}
