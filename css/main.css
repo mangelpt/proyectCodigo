@@ -1,22 +1,35 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* var
+*/
+:root{
+  --mainColor:#333333;
 }
 
 /**##########header##############**/
 .header {
   height: 50px;
-  background-color: #333333;
+  background-color:var(--mainColor);
   display: flex;
   justify-content: space-around;
+  position: fixed;
+  width:100%;
 }
 .header a {
   color: #fff;
   text-decoration: none;
-  margin: 15px;
+  margin: 10px;
+  font-size: 22px;
 }
 
-.header  ul {
+header .logo {
+  font-size: 2em;
+}
+.header ul {
   list-style: none;
   color: #fff;
   display: flex;
@@ -35,20 +48,24 @@
   align-items: baseline;
 }
 
-/** baner**/ 
+/** baner**/
 .Cbanner {
   color: #fff;
   margin-left: 20%;
 }
-.Cbanner .titulo{
-    font-weight: bold;
-    font-size: 1.8em;
+.Cbanner .titulo {
+  font-weight: bold;
+  font-size: 2.9em;
+}
+.Cbanner .parrafo {
+  font-size: 1.7em;
 }
 button {
   padding: 5px;
   margin: 10px;
   background: transparent;
   border: 3px solid #fff;
+  font-size: 20px;
 }
 button > a {
   color: #fff;
@@ -57,30 +74,65 @@ button > a {
 }
 
 /** club**/
-.club{
-padding: 20px;
+.club {
+  padding: 20px;
 }
 
-.club>h2{
-    text-align: center;
-    font-weight: bold;
-    font-size: 2.1em;
-    margin-bottom: 15px;
+.club > h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.1em;
+  margin-bottom: 15px;
 }
-.club>p{
-    text-align: center;
-    font-size: 1.1em;
+.club > p {
+  text-align: center;
+  font-size: 1.1em;
 }
 
 /**blog*/
 
-.blog h3{
-    text-align: center;
-    font-size: 1.5em;
+.blog h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8em;
+  margin: 0 0 20px 0;
+}
+
+.img {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.img figcaption {
+  text-align: center;
+  padding: 10px;
+  font-size: 19px;
 }
 
 
-.img{
-display: flex;
-justify-content:space-around
+/** photos***/
+.photos{
+  height: auto;
+  background-color: var(--mainColor);
+}
+.photos h3{
+  color: #fff;
+}
+.photo { 
+  padding-top: 30px;
+  display: flex;
+  justify-content:space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #fff;
+}
+.photo figure {
+  width: 20%;
+
+}
+.photo figure img {
+  width: 100%;
+  border-radius: 100%;
+  border: 5px solid #fff;
 }
