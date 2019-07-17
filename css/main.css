@@ -19,6 +19,7 @@
   justify-content: space-around;
   position: fixed;
   width: 100%;
+ 
 }
 .header a {
   color: #fff;
@@ -33,11 +34,21 @@
 header .logo {
   font-size: 2em;
 }
+.fas{
+  color: #fff;
+}
 .header ul {
   list-style: none;
   color: #fff;
   display: flex;
   margin-top: 15px;
+}
+
+@media  (max-width:480px){
+  .header ul {
+    display: none;
+  }
+
 }
 
 /**#################main########################**/
@@ -94,7 +105,6 @@ button > a {
 }
 
 /**blog*/
-
 .blog h3 {
   text-align: center;
   font-weight: bold;
@@ -112,6 +122,7 @@ button > a {
   text-align: center;
   padding: 10px;
   font-size: 19px;
+  width: 100%;
 }
 
 /** photos***/
@@ -127,7 +138,6 @@ button > a {
   padding-top: 30px;
   display: flex;
   justify-content: space-around;
-  flex-direction: row;
   flex-wrap: wrap;
   color: #fff;
 }
@@ -140,29 +150,29 @@ button > a {
   border: 5px solid #fff;
 }
 
-
 /*#####################footer****************************/
 
-footer{
+footer {
   height: auto;
-  background-color:var(--mainColor);
-  display:flex;
+  background-color: var(--mainColor);
+  display: flex;
   justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 10px;
-
 }
-footer a{
+footer a {
   text-decoration: none;
   color: #fff;
   margin: 10px;
 }
-.social{
+.social {
   display: flex;
 }
 
-.social .fab{
+.social .fab {
   color: #fff;
   margin: 5px;
   font-size: 1.4em;
 }
+
+/***######### media query #########*/
